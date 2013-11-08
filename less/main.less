@@ -111,16 +111,16 @@ section {
 }
 header {
 	padding-top: 68px;
+	position: relative;
 	.logo {
 		text-align: center;
-		margin-bottom: 46px;
+		margin-bottom: 66px;
 		padding-left: 7px;
 	}
 	.about-odessa-py {
 		width: 690px;
 		text-align: center;
-		margin: 0 auto 40px;
-		font-size: 14px;
+		margin: 0 auto 80px;
 		line-height: 20px;
 		font-size: 20px;
 	}
@@ -138,6 +138,56 @@ header {
 			&:active {
 				position: relative;
 				top: 1px;
+			}
+		}
+	}
+	.bird-icon {
+		background: url(../img/bird-icon.png) scroll no-repeat 0 0 transparent;
+		height: 87px;
+		width: 114px;
+		position: absolute;
+		top: 242px;
+		left: 0;
+	}
+	.register-icon {
+		background: url(../img/register-icon.png) scroll no-repeat 0 0 transparent;
+		height: 150px;
+		width: 124px;
+		position: absolute;
+		top: 222px;
+		right: 4px;
+	}
+	.social-links {
+		position: absolute;
+		right: -8px;
+		top: 17px;
+		height: 15px;
+		cursor: default;
+		a {
+			.iblock;
+			margin: 0 10px;
+			height: 15px;
+			background: url(../img/social-icons.png) scroll no-repeat 0 0 transparent;
+		}
+		.google {
+			width: 17px;
+			background-position: 0 0;
+			&:hover {
+				background-position: 0 -15px;
+			}
+		}
+		.facebook {
+			width: 18px;
+			background-position: -34px 0;
+			&:hover {
+				background-position: -34px -15px;
+			}
+		}
+		.twitter {
+			width: 18px;
+			background-position: -69px 0;
+			&:hover {
+				background-position: -69px -15px;
 			}
 		}
 	}
@@ -186,22 +236,37 @@ header {
 }
 .program {
 	position: relative;
+	.reports-list {
+		background: #FFD33D;
+		width: 530px;
+		margin: -11px auto 0;
+		padding: 11px 20px 14px;
+	}
 	.item {
-		margin-bottom: 16px;
+		margin-top: 20px;
 		color: #231F20;
 		font-size: 12px;
 		text-align: center;
+		&:first-child {
+			margin-top: 0;
+		}
 	}
 	.report-title {
-		font-weight: bold;
+		font-size: 14px;
+		span {
+			font-weight: bold;
+		}
+	}
+	.reporter-position {
+		font-style: italic;
 	}
 	.anchor-icon {
 		background: url(../img/anchor-icon.png) scroll no-repeat 0 0 transparent;
 		height: 103px;
 		width: 84px;
 		position: absolute;
-		top: 114pxm;
-		left: 27px;
+		top: 114px;
+		left: 16px;
 	}
 	.sun-icon {
 		background: url(../img/sun-icon.png) scroll no-repeat 0 0 transparent;
@@ -209,7 +274,15 @@ header {
 		width: 119px;
 		position: absolute;
 		top: 28px;
-		right: 14px;
+		right: -12px;
+	}
+	.fish-icon {
+		background: url(../img/fish-icon.png) scroll no-repeat 0 0 transparent;
+		height: 54px;
+		width: 86px;
+		position: absolute;
+		bottom: 0;
+		right: 6px;
 	}
 }
 .reporters {
@@ -219,12 +292,23 @@ header {
 		height: 131px;
 		width: 99px;
 		position: absolute;
-		top: 241px;
-		right: -45px;
+		top: 231px;
+		right: -25px;
+	}
+	.reporters-icon-2 {
+		background: url(../img/reporters-icon-2.png) scroll no-repeat 0 0 transparent;
+		height: 139px;
+		width: 100px;
+		position: absolute;
+		bottom: 237px;
+		right: -18px;
+	}
+	.reporters-list {
+		width: 600px;
+		margin: 0 auto;
 	}
 	.item {
 		.clear;
-		width: 728px;
 		margin: 38px auto 0;
 		&:first-child {
 			margin-top: 0;
@@ -242,9 +326,14 @@ header {
 	}
 	.name {
 		font-weight: bold;
+		font-size: 14px;
 	}
 	.about {
 		margin-bottom: 18px;
+	}
+	.position {
+		font-style: italic;
+		margin-bottom: 6px;
 	}
 	.report-info {
 		.title {
@@ -277,6 +366,26 @@ header {
 		top: 19px;
 		left: 30px;
 	}
+	.partners-icon-2 {
+		background: url(../img/partners-icon-2.png) scroll no-repeat 0 0 transparent;
+		height: 227px;
+		width: 121px;
+		position: absolute;
+		bottom: 100px;
+		right: -26px;
+	}
+	.list {
+		.clear;
+		width: 600px;
+	}
+	.item {
+		.iblock;
+		margin: 0 20px 40px;
+	}
+	.sep {
+		.clear;
+		text-align: center;
+	}
 }
 .place {
 	position: relative;
@@ -290,17 +399,17 @@ header {
 	}
 	.place-icon {
 		background: url(../img/place-icon.png) scroll no-repeat 0 0 transparent;
-		height: 135px;
-		width: 115px;
+		height: 112px;
+		width: 108px;
 		position: absolute;
-		top: 196px;
-		right: 15px;
+		top: 208px;
+		right: 7px;
 	}
 	.adress {
 		width: 514px;
 		margin: 0 auto;
-		font-size: 12px;
-		line-height: 17px;
+		font-size: 16px;
+		line-height: 20px;
 		text-align: center;
 		margin-bottom: 10px;
 	}
@@ -313,6 +422,7 @@ header {
 }
 .organizer {
 	padding-bottom: 94px;
+	position: relative;
 	.list {
 		width: 620px;
 	}
@@ -324,6 +434,14 @@ header {
 		left: 0;
 		right: 0;
 	}
+	/*.organizer-icon {
+		background: url(../img/organizer-icon.png) scroll no-repeat 0 0 transparent;
+		width: 237px;
+		height: 85px;
+		position: absolute;
+		top: 110px;
+		right: -10px;
+	}*/
 }
 footer {
 	padding: 8px 0 9px;
